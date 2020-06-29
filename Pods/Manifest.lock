@@ -1,0 +1,37 @@
+PODS:
+  - AnimatableReload (0.2.0)
+  - Realm (4.4.1):
+    - Realm/Headers (= 4.4.1)
+  - Realm/Headers (4.4.1)
+  - RealmSwift (4.4.1):
+    - Realm (= 4.4.1)
+  - SDWebImage (5.7.3):
+    - SDWebImage/Core (= 5.7.3)
+  - SDWebImage/Core (5.7.3)
+  - SDWebImageSVGCoder (1.5.0):
+    - SDWebImage/Core (~> 5.6)
+
+DEPENDENCIES:
+  - AnimatableReload
+  - RealmSwift
+  - SDWebImage
+  - SDWebImageSVGCoder (~> 1.5)
+
+SPEC REPOS:
+  trunk:
+    - AnimatableReload
+    - Realm
+    - RealmSwift
+    - SDWebImage
+    - SDWebImageSVGCoder
+
+SPEC CHECKSUMS:
+  AnimatableReload: 9576d3019bfb103f76b5f37fa6f8915bd8307527
+  Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
+  RealmSwift: 3eb8924ff7100df5928c7602f71d0fec51e7c9c5
+  SDWebImage: 97351f6582ceca541ea294ba66a1fcb342a331c2
+  SDWebImageSVGCoder: 057f61bd29c13aea7ddf9b5b0e23c34bcd2fba21
+
+PODFILE CHECKSUM: 1ddb7ae5f34ee323d47f6f71ea937b99cc3f03aa
+
+COCOAPODS: 1.9.1
