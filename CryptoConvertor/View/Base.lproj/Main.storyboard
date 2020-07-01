@@ -309,6 +309,9 @@
                                 <state key="normal" title="Day">
                                     <color key="titleColor" name="buttonTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="timeIntervalSelected:" destination="5bP-m2-keR" eventType="touchUpInside" id="57M-MY-axS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdH-hX-8l3">
                                 <rect key="frame" x="167" y="347" width="80" height="40"/>
@@ -321,6 +324,9 @@
                                 <state key="normal" title="Week">
                                     <color key="titleColor" name="buttonTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="timeIntervalSelected:" destination="5bP-m2-keR" eventType="touchUpInside" id="1Tv-Vp-OJC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnc-8J-Qhn">
                                 <rect key="frame" x="307" y="347" width="80" height="40"/>
@@ -333,6 +339,9 @@
                                 <state key="normal" title="Year">
                                     <color key="titleColor" name="buttonTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="timeIntervalSelected:" destination="5bP-m2-keR" eventType="touchUpInside" id="7lN-OP-LVc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24h change" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AY-oa-8A4">
                                 <rect key="frame" x="54.5" y="776" width="79" height="17"/>
@@ -370,28 +379,11 @@
                                 <color key="textColor" name="navBarTitleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUj-dS-CyU">
-                                <rect key="frame" x="20" y="402" width="374" height="333"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To be done soon..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aj9-fm-ZT4">
-                                        <rect key="frame" x="116.5" y="156" width="141" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="aj9-fm-ZT4" firstAttribute="centerY" secondItem="SUj-dS-CyU" secondAttribute="centerY" id="BaB-vd-3qc"/>
-                                    <constraint firstItem="aj9-fm-ZT4" firstAttribute="centerX" secondItem="SUj-dS-CyU" secondAttribute="centerX" id="Fl1-Ja-27v"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="dnz-et-oSI" firstAttribute="centerY" secondItem="8AY-oa-8A4" secondAttribute="centerY" id="06P-Nr-wYK"/>
                             <constraint firstItem="vdH-hX-8l3" firstAttribute="centerX" secondItem="o3N-kP-fEg" secondAttribute="centerX" id="53K-pu-TCj"/>
-                            <constraint firstItem="SUj-dS-CyU" firstAttribute="top" secondItem="TmZ-0t-7gq" secondAttribute="bottom" constant="15" id="7IV-OQ-xCp"/>
                             <constraint firstItem="4Kc-Wc-Ghv" firstAttribute="trailing" secondItem="H1l-0E-9XF" secondAttribute="trailing" constant="-5" id="9wx-7F-7ak"/>
                             <constraint firstItem="5PP-5M-2pS" firstAttribute="centerX" secondItem="o3N-kP-fEg" secondAttribute="centerX" id="BYz-0j-wid"/>
                             <constraint firstItem="Rxp-wL-EFL" firstAttribute="centerY" secondItem="Rkx-67-uy6" secondAttribute="centerY" id="CXe-uf-vRV"/>
@@ -400,10 +392,8 @@
                             <constraint firstItem="H1l-0E-9XF" firstAttribute="top" secondItem="5PP-5M-2pS" secondAttribute="bottom" constant="20" id="HWg-Is-t09"/>
                             <constraint firstItem="vdH-hX-8l3" firstAttribute="centerY" secondItem="TmZ-0t-7gq" secondAttribute="centerY" id="Kiv-Tp-3Se"/>
                             <constraint firstItem="dnz-et-oSI" firstAttribute="centerX" secondItem="o3N-kP-fEg" secondAttribute="centerX" id="LsX-47-QpD"/>
-                            <constraint firstItem="SUj-dS-CyU" firstAttribute="leading" secondItem="sCP-BO-T0x" secondAttribute="leading" constant="20" id="Mm0-WD-Axl"/>
                             <constraint firstItem="4Kc-Wc-Ghv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oaY-g5-XyU" secondAttribute="trailing" constant="1" id="NNo-f4-V6g"/>
                             <constraint firstItem="xOk-8X-EbZ" firstAttribute="leading" secondItem="dnz-et-oSI" secondAttribute="trailing" constant="29" id="QEl-HN-hDk"/>
-                            <constraint firstItem="sCP-BO-T0x" firstAttribute="trailing" secondItem="SUj-dS-CyU" secondAttribute="trailing" constant="20" id="QLV-aG-8Jb"/>
                             <constraint firstItem="8AY-oa-8A4" firstAttribute="centerX" secondItem="qxU-r1-kqt" secondAttribute="centerX" id="RHW-OF-dbp"/>
                             <constraint firstItem="vdH-hX-8l3" firstAttribute="top" secondItem="oaY-g5-XyU" secondAttribute="bottom" constant="33" id="RYx-7Y-zju"/>
                             <constraint firstItem="4Kc-Wc-Ghv" firstAttribute="centerY" secondItem="oaY-g5-XyU" secondAttribute="centerY" id="S5i-Oe-uUM"/>
@@ -411,7 +401,6 @@
                             <constraint firstItem="TmZ-0t-7gq" firstAttribute="leading" secondItem="sCP-BO-T0x" secondAttribute="leading" constant="27" id="XFb-6V-WdX"/>
                             <constraint firstItem="dnz-et-oSI" firstAttribute="top" secondItem="Rkx-67-uy6" secondAttribute="bottom" constant="5" id="YGi-B1-W9i"/>
                             <constraint firstItem="5PP-5M-2pS" firstAttribute="top" secondItem="sCP-BO-T0x" secondAttribute="top" constant="30" id="b4y-WS-v3k"/>
-                            <constraint firstItem="qxU-r1-kqt" firstAttribute="top" secondItem="SUj-dS-CyU" secondAttribute="bottom" constant="15" id="cSZ-Z2-rNN"/>
                             <constraint firstItem="xOk-8X-EbZ" firstAttribute="centerY" secondItem="dnz-et-oSI" secondAttribute="centerY" id="cg3-Y9-oq2"/>
                             <constraint firstItem="dnz-et-oSI" firstAttribute="leading" secondItem="8AY-oa-8A4" secondAttribute="trailing" constant="29" id="chA-cW-PgV"/>
                             <constraint firstItem="sCP-BO-T0x" firstAttribute="trailing" secondItem="gnc-8J-Qhn" secondAttribute="trailing" constant="27" id="fmI-dS-07E"/>

@@ -10,5 +10,6 @@ target 'CryptoConvertor' do
   pod 'SDWebImageSVGCoder', '~> 1.5'
   pod "AnimatableReload"
   pod 'RealmSwift'
+  pod 'Charts'
 
 end
