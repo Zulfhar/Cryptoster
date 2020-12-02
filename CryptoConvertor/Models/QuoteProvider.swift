@@ -40,7 +40,7 @@ class QuoteProvider {
                 let decodedData = try decoder.decode([Quote].self, from: safeData)
                 self?.sendQuotes(quotes: decodedData)
             } catch {
-                print(error.localizedDescription)
+                print(error)
             }
         }
         task.resume()

@@ -22,7 +22,7 @@ class QuoteCached: Object {
     dynamic var cachedTotalVolume: Double = 0.0
     dynamic var cachedPriceChangePercentage: Double = 0.0
     dynamic var cachedCirculatingSupply: Double = 0.0
-    dynamic var cachedTotalSupply: Int = 0
+    dynamic var cachedTotalSupply: Double = 0.0
     dynamic var cachedPriceDate: String = ""
     
     dynamic var cachedHighPrice: Double = 0.0
@@ -45,7 +45,7 @@ class QuoteCached: Object {
         quoteCached.cachedMarketcap = quote.market_cap
         quoteCached.cachedTotalVolume = quote.total_volume
         quoteCached.cachedCirculatingSupply = quote.circulating_supply
-        quoteCached.cachedTotalSupply = quote.total_supply ?? 0
+        quoteCached.cachedTotalSupply = quote.total_supply ?? 0.0
         quoteCached.cachedPriceChangePercentage = quote.price_change_percentage_24h ?? 0.0
         quoteCached.cachedPriceDate = quote.last_updated
         
